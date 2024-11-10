@@ -1,8 +1,11 @@
 ---
-Logo: image/leaf_256x256.png
+Logo: image/rlogo.png
 Tagline: My portfolio.
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
+    - title: Link till min github repo.
+      url: https://github.com/beckabeckis/designbth
       icon: github
+    - title: Link to Dbwebb YouTube.
+      url: https://www.youtube.com/@DbwebbSe
+      icon: youtube-square
 ---
