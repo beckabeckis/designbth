@@ -3,7 +3,7 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Om mig
 ==========================
 
 Mitt namn är Rebecka och jag kommer ursprungligen från Sölvesborg.

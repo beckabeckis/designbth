@@ -1,6 +1,6 @@
 ---
 Logo: image/rlogo.png
-Tagline: My portfolio.
+Tagline: Min portfolio.
 Social:
     - title: Link till min github repo.
       url: https://github.com/beckabeckis/designbth
