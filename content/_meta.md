@@ -1,11 +1,14 @@
 ---
 Logo: image/rlogo.png
-Tagline: Min portfolio.
+Tagline: Min portfolio
 Social:
-    - title: Link till min github repo.
+    - title: Länk till min github repo
       url: https://github.com/beckabeckis/designbth
-      icon: github
-    - title: Link to Dbwebb YouTube.
+      icon: fab fa-github
+    - title: Länk till Dbwebb YouTube
       url: https://www.youtube.com/@DbwebbSe
-      icon: youtube-square
+      icon: fab fa-youtube-square
+    - title: Länk till BTH
+      url: https://www.bth.se/
+      icon: fas fa-school  
 ---

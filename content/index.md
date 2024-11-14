@@ -1,5 +1,5 @@
 ---
-Title: Home
+Title: Rebecka
 Description: This is our index page.
 ---
 
@@ -22,4 +22,4 @@ utbildning nu och det känns det verkligen som att jag har hittat rätt!
 
 På min fritid så gillar jag det mesta estetiska som till exempel att sjunga, dansa och pyssla.
 
-![me](image/me.jpg "Me") {.myPic}
+![me](image/me.jpg "Me") {.my-pic}

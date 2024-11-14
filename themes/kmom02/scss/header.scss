@@ -1,0 +1,57 @@
+@use 'variables';
+
+/* Header */
+
+.header {
+  flex: 0 0 auto;
+  padding: 0 10%;
+  background-color: variables.$background-color;
+  border-bottom: 2px solid variables.$border-color;
+}
+
+.header,
+.site-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Title */
+
+.title {
+  padding: 1.2em 2em 1em 0;
+  line-height: 2rem;
+}
+
+.logo {
+  padding: 2em 2em 2em 0;
+}
+
+.logo img {
+  max-height: 100px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    padding: 1.5em 1em 0.5em 0;
+  }
+
+  .logo {
+    padding: 1em 1em 1em 0;
+  }
+
+  .title {
+    min-width: 50%;
+  }
+
+  .logo {
+    max-width: 30%;
+  }
+}
+
+.title * {
+  color: variables.$title-font-color;
+}
+
+.title p {
+  font-style: italic;
+}

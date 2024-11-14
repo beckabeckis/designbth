@@ -1,0 +1,18 @@
+@use 'fonts';
+@use 'sass:color';
+
+$background-color: #d9e8d9;
+$border-color: color.adjust($background-color, $lightness: -50%);
+
+$font-color: #444;
+$title-font-color: #111;
+$nav-color: #333;
+
+
+// $border-color: #818981;
+
+
+
+$font-header: 'JuliusSansOne-Regular';
+$font-h: 'Questrial-Regular';
+$font-main: 'Raleway-Regular';

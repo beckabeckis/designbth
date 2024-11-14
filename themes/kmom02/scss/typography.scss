@@ -1,0 +1,74 @@
+@use 'variables';
+
+/* Typography */
+
+body {
+  font-family: variables.$font-main;
+  line-height: 1.4rem;
+  color: variables.$font-color;
+}
+
+p,
+td,
+th,
+li,
+dd {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  font-weight: bold;
+  font-family: variables.$font-h;
+  font-size: large;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.25em;
+  margin-top: 0.96rem;
+  margin-bottom: 1rem;
+}
+
+main h1 {
+  font-size: 2.8em;
+  margin-bottom: 3.5rem;
+  font-weight: bold;
+  font-family: variables.$font-h;
+}
+
+.title a {
+  text-decoration: none;
+  font-family: variables.$font-header;
+}

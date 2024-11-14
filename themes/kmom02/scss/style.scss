@@ -1,0 +1,19 @@
+@use '../../node_modules/normalize.css/normalize';
+@use 'variables';
+
+@use 'blockquotes';
+@use 'code';
+@use 'mobile-menu';
+@use 'container';
+@use 'header';
+@use 'footer';
+@use 'typography';
+@use 'images';
+@use 'test';
+
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
