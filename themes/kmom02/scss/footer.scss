@@ -3,12 +3,12 @@
 /* Footer */
 
 .footer {
-  flex: 0 0 auto;
+  grid-column: first / end;
+  grid-row: row3-start / row-end;
+  display: grid;
+  grid-template-columns: [first] 60% [second] auto [end];
+  grid-template-rows: [row-start] 3em [row-end];
   padding: 0 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   background-color: variables.$background-color;
   border-top: 2px solid variables.$border-color;
 }
@@ -19,6 +19,10 @@
 }
 
 .footer .social {
+  grid-column: second / end;
+  grid-row: row3-start / row-start;
+  justify-self: end;
+  align-self: center;
   font-size: 2.5rem;
   padding: 10px;
 }
@@ -26,3 +30,15 @@
 .footer p {
   padding: 10px;
 }
+
+.footer-text {
+  grid-column: first / second;
+  grid-row: row-start / row-start;
+}
+
+@media (max-width: 767px) {
+  .footer .social {
+    font-size: 2rem;
+  }
+}
+

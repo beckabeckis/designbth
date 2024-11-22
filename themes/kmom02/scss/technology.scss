@@ -1,0 +1,84 @@
+@use 'variables';
+
+/* technology.scss */
+.landingpage {
+  display: grid;
+  gap: 1.96em;
+}
+
+.landingpage a {
+  text-decoration: none;
+  color: variables.$font-color;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.landingpage .box {
+  padding: 1.96em;
+  border: 1px solid #ccc;
+
+}
+
+.landingpage .box:hover {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.landingpage .html,
+.landingpage .javascript,
+.landingpage .sqlite {
+  grid-column: span 2;
+}
+
+.landingpage .python {
+  grid-column: span 3;
+}
+
+@media (max-width: 767px) {
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+
+  .landingpage .html,
+  .landingpage .javascript,
+  .landingpage .sqlite {
+    grid-column: span 1;
+  }
+
+  .landingpage .python {
+    grid-column: span 1;
+  }
+}
+
+
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.technology article {
+  width: 60%;
+}
+
+.technology .menu {
+  width: 30%;
+}
+
+.technology .menu a {
+  color: variables.$font-color;
+}
+
+@media (max-width: 767px) {
+  .technology .menu {
+    display: none;
+  }
+
+  .technology article {
+    width: 100%;
+  }
+}

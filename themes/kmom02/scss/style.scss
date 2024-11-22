@@ -3,13 +3,15 @@
 
 @use 'blockquotes';
 @use 'code';
-@use 'mobile-menu';
 @use 'container';
+@use 'typography';
 @use 'header';
 @use 'footer';
-@use 'typography';
 @use 'images';
+@use 'mobile-menu';
 @use 'test';
+
+@use 'technology';
 
 
 @import '../../shared/fontawesome/scss/fontawesome';

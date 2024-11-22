@@ -26,18 +26,20 @@ body {
 /* Placement */
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: [first] 20% [second] auto [third] 20% [end];
+  grid-template-rows: [row-start] auto [row2-start] auto [row3-start] auto [row-end];
 }
 
 .main {
-  flex: 1 0 auto;
-  margin: 1em 20%;
-  padding: 1.5em 1.2em;
+  grid-column: second / third;
+  grid-row: row2-start / row3-start;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 @media (max-width: 767px) {
-  .main {
-    margin: 1em 5%;
+  body {
+    grid-template-columns: [first] 8% [second] auto [third] 8% [end];
   }
 }

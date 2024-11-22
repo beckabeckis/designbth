@@ -354,6 +354,258 @@ pre code {
   line-height: 1.4;
 }
 
+/* Container */
+* {
+  box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding-left: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Placement */
+body {
+  display: grid;
+  grid-template-columns: [first] 20% [second] auto [third] 20% [end];
+  grid-template-rows: [row-start] auto [row2-start] auto [row3-start] auto [row-end];
+}
+
+.main {
+  grid-column: second/third;
+  grid-row: row2-start/row3-start;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 767px) {
+  body {
+    grid-template-columns: [first] 8% [second] auto [third] 8% [end];
+  }
+}
+/* Typography */
+body {
+  font-family: "Raleway-Regular";
+  line-height: 1.4rem;
+  color: #444;
+}
+
+p,
+td,
+th,
+li,
+dd {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  font-weight: bold;
+  font-family: "Questrial-Regular";
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.25em;
+  margin-top: 0.96rem;
+  margin-bottom: 1rem;
+}
+
+main h1 {
+  font-size: 2.8em;
+  margin-bottom: 3.5rem;
+  font-weight: bold;
+  font-family: "Questrial-Regular";
+}
+
+.title a {
+  text-decoration: none;
+  font-family: "JuliusSansOne-Regular";
+}
+
+/* Header */
+.header {
+  grid-column: first/end;
+  grid-row: row-start/row-start;
+  display: grid;
+  grid-template-columns: [first] 20% [second] auto [third] 40% [end];
+  grid-template-rows: [row-start] auto [row-end];
+  padding: 0 10%;
+  background-color: #d9e8d9;
+  border-bottom: 2px solid rgb(73.1475409836, 120.8524590164, 73.1475409836);
+}
+
+.site-header {
+  grid-column: first/third;
+  grid-row: row-start/row-start;
+  display: grid;
+  grid-template-columns: [first] 20% [second] auto [end];
+  grid-template-rows: [row-start] auto [row-end];
+}
+
+.nav {
+  grid-column: third/end;
+  grid-row: row-start/row-start;
+}
+
+.nav-toggle {
+  grid-column: third/end;
+  grid-row: row-start/row-start;
+}
+
+/* Title */
+.title {
+  grid-column: second/end;
+  grid-row: row-start/row-start;
+  padding: 1.2em 2em 1em 0;
+  line-height: 2rem;
+}
+
+.logo {
+  grid-column: first/second;
+  grid-row: row-start/row-start;
+  padding: 2em 2em 2em 0;
+}
+
+.logo img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+@media (max-width: 1120px) {
+  .title {
+    padding: 1.5em 1em 0.5em 0;
+    font-size: smaller;
+  }
+  .logo {
+    padding: 2.25em 2em 2em 0;
+  }
+  .logo img {
+    max-width: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    padding: 1.5em 1em 0.5em 0;
+    min-width: 50%;
+  }
+  .logo {
+    padding: 2.5em 2em 2em 0;
+  }
+  .logo img {
+    max-width: 50px;
+  }
+  .title a p {
+    display: none;
+  }
+  .header {
+    grid-template-columns: [first] 20% [second] auto [third] 10% [end];
+  }
+  .nav {
+    grid-column: first/end;
+    grid-row: row1-start/row-end;
+    margin: 0;
+  }
+}
+.title * {
+  color: #111;
+}
+
+.title p {
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  grid-column: first/end;
+  grid-row: row3-start/row-end;
+  display: grid;
+  grid-template-columns: [first] 60% [second] auto [end];
+  grid-template-rows: [row-start] 3em [row-end];
+  padding: 0 10%;
+  background-color: #d9e8d9;
+  border-top: 2px solid rgb(73.1475409836, 120.8524590164, 73.1475409836);
+}
+
+.footer a {
+  color: #444;
+  text-decoration: none;
+}
+
+.footer .social {
+  grid-column: second/end;
+  grid-row: row3-start/row-start;
+  justify-self: end;
+  align-self: center;
+  font-size: 2.5rem;
+  padding: 10px;
+}
+
+.footer p {
+  padding: 10px;
+}
+
+.footer-text {
+  grid-column: first/second;
+  grid-row: row-start/row-start;
+}
+
+@media (max-width: 767px) {
+  .footer .social {
+    font-size: 2rem;
+  }
+}
+/* Images */
+.my-pic {
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .slide {
   overflow-y: hidden !important;
   transition: height 0.5s ease-in !important;
@@ -418,201 +670,6 @@ pre code {
     cursor: pointer;
   }
 }
-/* Container */
-* {
-  box-sizing: border-box;
-  border: 0 none;
-  margin: 0;
-  padding: 0;
-}
-
-ol,
-ul {
-  padding-left: 1.5em;
-}
-
-.hidden {
-  display: none !important;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-/* Placement */
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
-  flex: 1 0 auto;
-  margin: 1em 20%;
-  padding: 1.5em 1.2em;
-}
-
-@media (max-width: 767px) {
-  .main {
-    margin: 1em 5%;
-  }
-}
-/* Header */
-.header {
-  flex: 0 0 auto;
-  padding: 0 10%;
-  background-color: #d9e8d9;
-  border-bottom: 2px solid rgb(73.1475409836, 120.8524590164, 73.1475409836);
-}
-
-.header,
-.site-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Title */
-.title {
-  padding: 1.2em 2em 1em 0;
-  line-height: 2rem;
-}
-
-.logo {
-  padding: 2em 2em 2em 0;
-}
-
-.logo img {
-  max-height: 100px;
-}
-
-@media (max-width: 767px) {
-  .title {
-    padding: 1.5em 1em 0.5em 0;
-  }
-  .logo {
-    padding: 1em 1em 1em 0;
-  }
-  .title {
-    min-width: 50%;
-  }
-  .logo {
-    max-width: 30%;
-  }
-}
-.title * {
-  color: #111;
-}
-
-.title p {
-  font-style: italic;
-}
-
-/* Footer */
-.footer {
-  flex: 0 0 auto;
-  padding: 0 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #d9e8d9;
-  border-top: 2px solid rgb(73.1475409836, 120.8524590164, 73.1475409836);
-}
-
-.footer a {
-  color: #444;
-  text-decoration: none;
-}
-
-.footer .social {
-  font-size: 2.5rem;
-  padding: 10px;
-}
-
-.footer p {
-  padding: 10px;
-}
-
-/* Typography */
-body {
-  font-family: "Raleway-Regular";
-  line-height: 1.4rem;
-  color: #444;
-}
-
-p,
-td,
-th,
-li,
-dd {
-  text-align: justify;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-  font-weight: bold;
-  font-family: "Questrial-Regular";
-  font-size: large;
-}
-
-h2 {
-  font-size: 1.8em;
-}
-
-h3 {
-  font-size: 1.6em;
-}
-
-h4 {
-  font-size: 1.4em;
-}
-
-h5 {
-  font-size: 1.2em;
-}
-
-h6 {
-  font-size: 1em;
-}
-
-img {
-  max-width: 100%;
-}
-
-p {
-  font-size: 1.25em;
-  margin-top: 0.96rem;
-  margin-bottom: 1rem;
-}
-
-main h1 {
-  font-size: 2.8em;
-  margin-bottom: 3.5rem;
-  font-weight: bold;
-  font-family: "Questrial-Regular";
-}
-
-.title a {
-  text-decoration: none;
-  font-family: "JuliusSansOne-Regular";
-}
-
-/* Images */
-.my-pic {
-  margin: 10px 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 /* Test css */
 /* Kmom01 */
 .first {
@@ -665,6 +722,81 @@ main h1 {
   letter-spacing: -3px;
 }
 
+/* technology.scss */
+.landingpage {
+  display: grid;
+  gap: 1.96em;
+}
+
+.landingpage a {
+  text-decoration: none;
+  color: #444;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.landingpage .box {
+  padding: 1.96em;
+  border: 1px solid #ccc;
+}
+
+.landingpage .box:hover {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.landingpage .html,
+.landingpage .javascript,
+.landingpage .sqlite {
+  grid-column: span 2;
+}
+
+.landingpage .python {
+  grid-column: span 3;
+}
+
+@media (max-width: 767px) {
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+  .landingpage .html,
+  .landingpage .javascript,
+  .landingpage .sqlite {
+    grid-column: span 1;
+  }
+  .landingpage .python {
+    grid-column: span 1;
+  }
+}
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.technology article {
+  width: 60%;
+}
+
+.technology .menu {
+  width: 30%;
+}
+
+.technology .menu a {
+  color: #444;
+}
+
+@media (max-width: 767px) {
+  .technology .menu {
+    display: none;
+  }
+  .technology article {
+    width: 100%;
+  }
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
