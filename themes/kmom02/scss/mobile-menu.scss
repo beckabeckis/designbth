@@ -1,5 +1,3 @@
-@use 'variables';
-
 .slide {
   overflow-y: hidden !important;
   transition: height 0.5s ease-in !important;
@@ -25,12 +23,13 @@
 
   &:hover {
     text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }
 
 .nav a,
 .nav-toggle {
-  color: variables.$nav-color;
+  color: $nav-color;
 }
 
 .nav-toggle {
@@ -67,5 +66,9 @@
     line-height: 2em;
     text-align: center;
     cursor: pointer;
+  }
+
+  .nav {
+    margin-top: 0;
   }
 }

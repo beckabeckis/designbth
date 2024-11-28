@@ -1,14 +1,12 @@
-@use 'variables';
-
 /* technology.scss */
 .landingpage {
   display: grid;
-  gap: 1.96em;
+  gap: $main-margin;
 }
 
 .landingpage a {
   text-decoration: none;
-  color: variables.$font-color;
+  color: $font-color;
 }
 
 .landingpage h1 {
@@ -17,9 +15,9 @@
 }
 
 .landingpage .box {
-  padding: 1.96em;
-  border: 1px solid #ccc;
-
+  padding: $main-margin;
+  border: 1px solid $accent-border-color;
+  background-color: $accent-color;
 }
 
 .landingpage .box:hover {
@@ -70,7 +68,7 @@
 }
 
 .technology .menu a {
-  color: variables.$font-color;
+  color: $font-color;
 }
 
 @media (max-width: 767px) {

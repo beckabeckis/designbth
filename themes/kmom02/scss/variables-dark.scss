@@ -1,20 +1,20 @@
 @use 'fonts';
 @use 'sass:color';
 
-$background-color: #bba2af;
-$background-color-blend: #826574;
+$background-color: #231f34;
+$background-color-blend: #181425;
 $border-color: color.adjust($background-color, $lightness: -50%);
 
-$main-background-color: #ecebeb;
-$body-background-color: #e4dee2;
-$accent-color: #bfd6c0;
+$main-background-color: #2f2847;
+$body-background-color: #26203d;
+$accent-color: #231f34;
 $accent-border-color: color.adjust($accent-color, $lightness: -20%);
 
 
-$font-color: #444;
-$title-font-color: #29322a;
-$nav-color: #333;
-$link-colors: #353d41;
+$font-color: #f3f3f3;
+$title-font-color: #eee;
+$nav-color: #e4e4e4;
+$link-colors: #a9c6d4;
 
 
 $font-header: 'JuliusSansOne-Regular', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,3 +22,7 @@ $font-h: 'Questrial-Regular', Cambria, Cochin, Georgia, serif;
 $font-main: 'Raleway-Regular', Tahoma, Geneva, Verdana, sans-serif;
 
 $main-margin: 1.96rem;
+
+img {
+  filter: brightness(0.8) contrast(1.2);
+}

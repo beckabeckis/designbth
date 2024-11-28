@@ -319,6 +319,10 @@ template {
   font-family: "Raleway-Regular";
   src: url("../../fonts/Raleway/Raleway-VariableFont_wght.ttf") format("woff2");
 }
+img {
+  filter: brightness(0.8) contrast(1.2);
+}
+
 @font-face {
   font-family: "JuliusSansOne-Regular";
   src: url("../../fonts/JuliusSansOne/JuliusSansOne-Regular.ttf") format("woff2");
@@ -353,9 +357,9 @@ blockquote {
 code {
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
-  border: 1px solid hsl(163.4482758621, 35.2226720648%, -1.568627451%);
+  border: 1px solid hsl(120, 2.1276595745%, -31.568627451%);
   border-radius: 0.3em;
-  background: #50A78F;
+  background: #2e302e;
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
@@ -363,9 +367,9 @@ code {
 
 pre {
   padding: 0 1em;
-  border: 1px solid hsl(163.4482758621, 35.2226720648%, -1.568627451%);
+  border: 1px solid hsl(120, 2.1276595745%, -31.568627451%);
   border-radius: 0.3em;
-  background: #50A78F;
+  background: #2e302e;
 }
 
 pre code {
@@ -405,7 +409,7 @@ body {
   display: grid;
   grid-template-columns: [first] 20% [second] auto [third] 20% [end];
   grid-template-rows: [row-start] auto [row2-start] auto [row3-start] auto [row-end];
-  background-color: #D8E0B8;
+  background-color: #4c4d4c;
 }
 
 .main {
@@ -423,7 +427,7 @@ body {
 body {
   font-family: "Raleway-Regular", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4rem;
-  color: #444;
+  color: #f3f3f3;
 }
 
 p,
@@ -517,8 +521,8 @@ p {
   grid-template-columns: [first] 20% [second] auto [third] 40% [end];
   grid-template-rows: [row-start] auto [row-end];
   padding: 0 10%;
-  background-image: linear-gradient(300deg, #50A78F, #5EC5A8);
-  border-bottom: 2px solid hsl(163.4482758621, 35.2226720648%, -1.568627451%);
+  background-image: linear-gradient(300deg, #2e302e, #494f49);
+  border-bottom: 2px solid hsl(120, 2.1276595745%, -31.568627451%);
 }
 
 .site-header {
@@ -594,7 +598,7 @@ p {
   }
 }
 .title * {
-  color: #111;
+  color: #eeeeee;
 }
 
 .title p {
@@ -614,12 +618,12 @@ p {
   grid-template-columns: [first] 60% [second] auto [end];
   grid-template-rows: [row-start] 3em [row-end];
   padding: 0 10%;
-  background-color: #50A78F;
-  border-top: 2px solid hsl(163.4482758621, 35.2226720648%, -1.568627451%);
+  background-color: #2e302e;
+  border-top: 2px solid hsl(120, 2.1276595745%, -31.568627451%);
 }
 
 .footer a {
-  color: #444;
+  color: #f3f3f3;
   text-decoration: none;
 }
 
@@ -686,7 +690,7 @@ p {
 
 .nav a,
 .nav-toggle {
-  color: #333;
+  color: #e4e4e4;
 }
 
 .nav-toggle {
@@ -793,7 +797,7 @@ p {
 
 .landingpage a {
   text-decoration: none;
-  color: #444;
+  color: #f3f3f3;
 }
 
 .landingpage h1 {
@@ -850,7 +854,7 @@ p {
 }
 
 .technology .menu a {
-  color: #444;
+  color: #f3f3f3;
 }
 
 @media (max-width: 767px) {
