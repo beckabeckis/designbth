@@ -5,3 +5,15 @@
 .landingpage .designprinciples {
   grid-column: span 3;
 }
+
+.sheet {
+  max-width: 560px;
+  height: 565px;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .sheet {
+    height: 580px;
+  }
+}

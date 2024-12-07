@@ -23,6 +23,7 @@
 .nav {
   grid-column: third / end;
   grid-row: row-start / row-start;
+  align-self: flex-end;
 }
 
 .nav-toggle {

@@ -1,0 +1,34 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="landingpage">
+            {{ content }}
+
+            {% for pic in meta.Gallery %}
+            <a href="{{ base_url }}/image/gallery/{{ pic.name }}" class="pic">
+                <div class="gallery-box pic">
+                    <picture>
+                        <source media="(min-width: 767px)" srcset="{{ base_url }}/image/gallery/{{ pic.name }}?w=500&q=50&f=brightness,5">
+                        <img src="{{ base_url }}/image/gallery/{{ pic.name }}?w=760&q=50&f=brightness,5" alt="{{ pic.class }}">
+                    </picture>
+                </div>
+            </a>
+            
+            {% endfor %}
+
+        </div>
+        <p>Bilder av <strong><a href="https://www.pexels.com/sv-se/@apvibes/gallery/">AP Vibes</a></strong></p>
+        <br>
+        <h3>Min favorit video</h3>
+        <div class="embed-container">
+            <iframe src="https://www.youtube.com/embed/5pidokakU4I" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
