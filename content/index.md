@@ -6,6 +6,8 @@ Description: This is our index page.
 Om mig
 ==========================
 
+![me](image/me.webp "Me") {.my-pic}
+
 Mitt namn är Rebecka och jag kommer ursprungligen från Sölvesborg.
 När jag var 11 år så flyttade min familj och jag till Vallentuna i Stockholm
 där jag bodde tills jag var 19 och flyttade hemifrån ner till Skåne.
@@ -22,4 +24,3 @@ utbildning nu och det känns det verkligen som att jag har hittat rätt!
 
 På min fritid så gillar jag det mesta estetiska som till exempel att sjunga, dansa och pyssla.
 
-![me](image/me.jpg "Me") {.my-pic}

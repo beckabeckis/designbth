@@ -16,9 +16,9 @@ Jag har använt mig av pagespeed.web.dev/ som tar fram betyg på prestanda, till
 Resultat
 -----------------------
 
-#### Arbetsförmedlingen.se
+### Arbetsförmedlingen.se
 
-![canva](../image/load-analysis/arbetsformedlingen-example.png "Arbetsförmedlingen") {.websiteImg}
+![arbetsformedlingen](../image/load-analysis/arbetsformedlingen-example.webp "Arbetsförmedlingen") {.websiteImg}
 
 _Data_
 
@@ -31,9 +31,9 @@ Enligt resultatet så ser man att sidans startsida och om sida fungerar bra på 
 Platsbanken verkar ha mer problem, sämre mobil prestanda där det även ges förslag att undvika större layoutförskjutningar och även problem med Core Test Vitals; INP och CLS. Dessa hade förbättrats med att öka prestandan genom de givna förslagen samt återigen undvika större layoutförskjutningar.
 
 
-#### Amazon.se
+### Amazon.se
 
-![canva](../image/load-analysis/amazon-example.png "Amazon") {.websiteImg}
+![amazon](../image/load-analysis/amazon-example.webp "Amazon") {.websiteImg}
 
 _Data_
 
@@ -48,9 +48,9 @@ Sidan bestsellers har likande problem med den mobila och dator prestandan och de
 Mest problem har sidan aboutamazon.eu. Både på mobilen och datorn har den problem med prestandan och tillgänglighet, mest prestanda problem har den på mobilen där förslagen bland annat är att minska LCP, alltså inläsningen av det största elementet, och använda bilder med rätt storlek. För att förbättra tillgängligheten så kan de bland annat förbättra hur listorna läses upp genom att endast ha li element i listor. Om de förbättrar prestanda borde även FCP och TTFB förbättras.
 
 
-#### Dn.se
+### Dn.se
 
-![canva](../image/load-analysis/dn-example.png "DN") {.websiteImg}
+![dn](../image/load-analysis/dn-example.webp "DN") {.websiteImg}
 
 _Data_
 

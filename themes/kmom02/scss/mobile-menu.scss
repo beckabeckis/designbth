@@ -19,17 +19,31 @@
 }
 
 .nav a {
-  text-decoration: none;
+  font-size: large;
+  padding: 1em 0;
 
-  &:hover {
-    text-decoration: underline;
-    text-underline-offset: 2px;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    height: 1.3px;
+    left: 0;
+    bottom: 1em;
+    width: 0;
+    background: $font-color;
+    transition: width 0.2s;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 }
 
 .nav a,
 .nav-toggle {
-  color: $nav-color;
+  color: $font-color;
 }
 
 .nav-toggle {
@@ -54,7 +68,7 @@
 
   .nav ul li a {
     display: block;
-    padding: 0.5em 0;
+    padding: 0.5em 1em;
   }
 
   .js .nav-toggle {

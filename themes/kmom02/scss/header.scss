@@ -8,7 +8,6 @@
   grid-template-rows: [row-start] auto [row-end];
   padding: 0 10%;
   background-image: linear-gradient(300deg, $background-color, $background-color-blend);
-  // background-color: $background-color;
   border-bottom: 2px solid $border-color;
 }
 
@@ -39,6 +38,12 @@
   grid-row: row-start / row-start;
   padding: 1.2em 2em 1em 0;
   line-height: 2rem;
+}
+
+.title h1 {
+  font-weight: bolder;
+  font-size: 3em;
+  line-height: 2.5rem;
 }
 
 .logo {

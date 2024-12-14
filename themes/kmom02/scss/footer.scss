@@ -47,6 +47,11 @@
   text-decoration: underline;
 }
 
+.footer-list p {
+  font-size: 1.5em;
+  padding: 0.5em 0 0.2em;
+}
+
 @media (max-width: 767px) {
   .footer .social {
     font-size: 2rem;

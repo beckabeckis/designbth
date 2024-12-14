@@ -8,7 +8,7 @@
             {{ content }}
 
             {% for pic in meta.Gallery %}
-            <a href="{{ base_url }}/image/gallery/{{ pic.name }}" class="pic">
+            <a href="{{ base_url }}/image/gallery/{{ pic.name }}" target="_blank" class="pic">
                 <div class="gallery-box pic">
                     <picture>
                         <source media="(min-width: 767px)" srcset="{{ base_url }}/image/gallery/{{ pic.name }}?w=500&q=50&f=brightness,5">
@@ -22,9 +22,9 @@
         </div>
         <p>Bilder av <strong><a href="https://www.pexels.com/sv-se/@apvibes/gallery/">AP Vibes</a></strong></p>
         <br>
-        <h3>Min favorit video</h3>
+        <h2>Min favorit video</h2>
         <div class="embed-container">
-            <iframe src="https://www.youtube.com/embed/5pidokakU4I" frameborder="0" allowfullscreen></iframe>
+            <iframe loading="lazy" title="favoritvideo" src="https://www.youtube.com/embed/5pidokakU4I" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 

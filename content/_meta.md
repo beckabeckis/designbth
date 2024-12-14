@@ -1,5 +1,5 @@
 ---
-Logo: image/rlogo.png
+Logo: image/rlogo.webp
 Tagline: Min portfolio
 Social:
     - title: Länk till min github repo

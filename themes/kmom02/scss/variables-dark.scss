@@ -1,19 +1,19 @@
 @use 'fonts';
 @use 'sass:color';
 
-$background-color: #231f34;
+$background-color: #151014;
 $background-color-blend: #181425;
 $border-color: color.adjust($background-color, $lightness: -50%);
 
-$main-background-color: #2f2847;
-$body-background-color: #26203d;
+$main-background-color: rgb(23, 20, 32);
+$body-background-color: rgba(23, 20, 32, 0.9);
+// $main-background-color: #2f2847;
+// $body-background-color: #26203d;
 $accent-color: #231f34;
 $accent-border-color: color.adjust($accent-color, $lightness: -20%);
 
-
-$font-color: #f3f3f3;
 $title-font-color: #eee;
-$nav-color: #e4e4e4;
+$font-color: #e4e4e4;
 $link-colors: #a9c6d4;
 
 

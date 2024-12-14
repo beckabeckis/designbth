@@ -16,9 +16,9 @@ Jag använde mig av tillägget ColorZilla från Google för att ta fram huvudfä
 Resultat
 -----------------------
 
-#### Canva
+### Canva
 
-![canva](../image/colors-analysis/canva-example.png "Canva") {.websiteImg}
+![canva](../image/colors-analysis/canva-example.webp "Canva") {.websiteImg}
 
 _Val av färg_
 
@@ -58,9 +58,9 @@ Sammanfattningsvis så tycker jag att färgerna och fonterna tillsammans ger av 
 
 
 
-#### Coop
+### Coop
 
-![coop](../image/colors-analysis/coop-example.png "Coop") {.websiteImg}
+![coop](../image/colors-analysis/coop-example.webp "Coop") {.websiteImg}
 
 _Val av färg_
 
@@ -98,9 +98,9 @@ _Sammanfattning_
 Jag personligen tycker inte att hemsidans above the fold 'skriker' mataffär precis men jag kan tänka mig att de är så pass kända i sin målgrupp att de har satsat mer på att ha en mer modern och även mysig känsla. När man skrollar ner så är det massor av matvaror med pricer vilket då gör det uppenbart att det är en mataffär. Fonten känns det som att de har använt väldigt länge så det blir och en igenkänningsfaktor.
 
 
-#### Aftonbladet
+### Aftonbladet
 
-![aftonbladet](../image/colors-analysis/aftonbladet-example.png "Aftonbladet") {.websiteImg}
+![aftonbladet](../image/colors-analysis/aftonbladet-example.webp "Aftonbladet") {.websiteImg}
 
 _Val av färg_
 

@@ -29,7 +29,10 @@ body {
   grid-template-rows: [row-start] auto [row2-start] auto [row3-start] auto [row-end];
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: linear-gradient($body-background-color, $background-color);
+  background-color: $body-background-color;
+  background-image: url('../../../image/textured-background.webp');
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 
 body a {
@@ -45,7 +48,14 @@ body a:hover {
   grid-row: row2-start / row3-start;
   padding: 3em;
   background-color: $main-background-color;
+  background-image: url('../../../image/textured-background.webp');
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+
 
 @media (max-width: 767px) {
   body {
